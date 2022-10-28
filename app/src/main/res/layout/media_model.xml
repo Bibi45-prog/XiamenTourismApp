@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="10dp"
+                android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/place1"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:id="@+id/image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background" />
+
+                </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:id="@+id/name"
+                android:visibility="gone"
+                android:textColor="@android:color/black" />
+            </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="10dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/place2"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:id="@+id/image1"
+android:scaleType="centerCrop"
+                            android:src="@drawable/ic_launcher_background" />
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.4"
+                        android:gravity="center"
+                        android:id="@+id/name1"
+                        android:visibility="gone"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

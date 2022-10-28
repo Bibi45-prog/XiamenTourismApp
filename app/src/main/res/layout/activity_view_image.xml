@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/image_view_wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <Button
+        android:id="@+id/share_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="20sp"
+        android:background="@drawable/btn_sign_up_login_bg"
+        android:fontFamily="@font/roboto"
+        android:text="Share Image"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+</RelativeLayout>
